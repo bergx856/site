@@ -37,9 +37,6 @@
                                 <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="navitem">
-                                <a href="../about/" class="nav-link">About</a>
-                            </li>
-                            <li class="navitem">
                                 <a href="../coursework/" class="nav-link">Coursework</a>
                             </li>
                             <li class="navitem active">
@@ -102,42 +99,42 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="markdown-site-building">Markdown Site Building</h1>
+<hr />
+<p>The Markdown rundown! These are the steps that I follow to generate a live preview of my site,
+as well as those that I use to turn that preview into a live and accessible site via GitHub.</p>
 <h2 id="testing">Testing</h2>
 <p>Command prompt lines used to create a live, re-loading docs server:</p>
-<ol>
-<li>C:\Users\sara's pc>cd desktop</li>
-<li>C:\Users\sara's pc\Desktop>cd mkproj1</li>
-<li>C:\Users\sara's pc\Desktop\mkproj1>cd project</li>
-<li>C:\Users\sara's pc\Desktop\mkproj1\project>mkdocs serve</li>
-</ol>
+<pre><code>C:\Users\sara's pc&gt;cd desktop
+C:\Users\sara's pc\Desktop&gt;cd mkproj1
+C:\Users\sara's pc\Desktop\mkproj1&gt;cd project
+C:\Users\sara's pc\Desktop\mkproj1\project&gt;mkdocs serve
+</code></pre>
 <p>These four lines are simply telling the computer where to find the specific folder
 of Markdown files that I would like to access and use to generate my live site. My
 folders are located on my desktop in a folder entitled "mkproj1", which has the final
 destination file entitled "project". Inputting that final "mkdocs serve" then generates:</p>
-<ul>
-<li>INFO    -  Building documentation...</li>
-<li>INFO    -  Cleaning site directory</li>
-<li>INFO    -  Documentation built in 0.09 seconds</li>
-<li>[I 210427 19:35:45 server:335] Serving on http://127.0.0.1:8000</li>
-<li>INFO    -  Serving on http://127.0.0.1:8000</li>
-<li>[I 210427 19:35:45 handlers:62] Start watching changes</li>
-<li>INFO    -  Start watching changes</li>
-<li>[I 210427 19:35:45 handlers:64] Start detecting changes</li>
-<li>INFO    -  Start detecting changes</li>
-<li>[I 210427 19:35:49 handlers:135] Browser Connected: http://127.0.0.1:8000/conception/</li>
-<li>INFO    -  Browser Connected: http://127.0.0.1:8000/conception/</li>
-</ul>
+<pre><code>INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+INFO    -  Documentation built in 0.09 seconds
+[I 210427 19:35:45 server:335] Serving on http://127.0.0.1:8000
+INFO    -  Serving on http://127.0.0.1:8000
+[I 210427 19:35:45 handlers:62] Start watching changes
+INFO    -  Start watching changes
+[I 210427 19:35:45 handlers:64] Start detecting changes
+INFO    -  Start detecting changes
+[I 210427 19:35:49 handlers:135] Browser Connected: http://127.0.0.1:8000/conception/
+INFO    -  Browser Connected: http://127.0.0.1:8000/conception/
+</code></pre>
 <p>This handy set of lines allows me to easily see what happens when I make a change
-on my text editor Atom. I simply save my change in atom, and it will update on a
-version of my site!</p>
+on my text editor Atom. I simply save my change in Atom, and it will update instantly to
+to the preview of my site! This site can then be tested at the provided link: http://127.0.0.1:8000.</p>
 <h2 id="launching">Launching</h2>
 <p>Command prompt lines used to build the documentation site:</p>
-<ol>
-<li>C:\Users\sara's pc>cd desktop</li>
-<li>C:\Users\sara's pc\Desktop>cd mkproj1</li>
-<li>C:\Users\sara's pc\Desktop\mkproj1>cd project</li>
-<li>C:\Users\sara's pc\Desktop\mkproj1\project>mkdocs build</li>
-</ol>
+<pre><code>C:\Users\sara's pc&gt;cd desktop
+C:\Users\sara's pc\Desktop&gt;cd mkproj1
+C:\Users\sara's pc\Desktop\mkproj1&gt;cd project
+C:\Users\sara's pc\Desktop\mkproj1\project&gt;mkdocs build
+</code></pre>
 <p>These four lines are nearly identical to the first four used to create the live server,
 the only difference being the command "build" instead of "serve" in the last line. The
 "build" creates a site folder within my project folder, which can then be published on GitHub (desktop).
@@ -145,7 +142,7 @@ Once in Github:</p>
 <ol>
 <li> Hit File, Add Local Repository, and Choose the Site folder as the destination.</li>
 <li>Kept the repository's name as "site" for ease, and initialized with a ReadMe.</li>
-</li>missed steps?</li>
+<li>missed steps?</li>
 In order to update new changes to my actual site, I simply redo the "mkdocs build" command, which updates my site folder. It This then brings up all of the changes that I've made into Github. I then write a short summary, hit commit to main, and push origin.</div>
             </div>
         </div>
